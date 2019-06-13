@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+Import numpy as np
+plt.ion()
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+While True:
+          x = np.random.randint(100, 400, 200)
+          y = np.random.randint(100, 400, 200)
+          z = np.random.randint(100, 400, 200)
+          ax.plot( [x], [y], [z], ’r.’)
+          plt.pause(0.02)
+          plt.draw()
